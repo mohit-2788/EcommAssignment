@@ -11,10 +11,10 @@ namespace EcommAssignment
         public int productId { get; set; }
         public String productName { get; set; }
         public float price { get; set; }
-        public float stock { get; set; }
+        public int stock { get; set; }
 
         //Constructor
-        public Product(int productId, String productName, float price, float stock)
+        public Product(int productId, String productName, float price, int stock)
         {
             this.productId = productId;
             this.productName = productName;
@@ -22,12 +22,12 @@ namespace EcommAssignment
             this.stock = stock;
         }
 
-        public void increaseStockPrice(float stock)
+        public void increaseStockPrice(int stock)
         {
             this.stock += stock;
         }
 
-        public void decreaseStockPrice(float stock) 
+        public void decreaseStockPrice(int stock) 
         {  
             this.stock -= stock; 
         }
